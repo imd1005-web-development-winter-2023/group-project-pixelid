@@ -91,7 +91,7 @@ function determineWinner(playerChoice,computerChoice)
     }
     else if(playerChoice===1&&computerChoice===2)
     {
-        winnerMessage.textContent= "Carrot plugs Gun: YOU WON!";
+        winnerMessage.textContent= "Carrot jams Gun: YOU WON!";
     }
     else if(playerChoice===2&&computerChoice===0)
     {
@@ -107,7 +107,7 @@ function determineWinner(playerChoice,computerChoice)
     }
     else if(playerChoice===2&&computerChoice===1)
     {
-        winnerMessage.textContent="Gun gets plugged by Carrot: YOU LOST:(";
+        winnerMessage.textContent="Gun gets jammed by Carrot: YOU LOST:(";
     }
 
     messageList.appendChild(winnerMessage);
