@@ -78,9 +78,9 @@ function gunCompChoice()
 function determineWinner(playerChoice,computerChoice)
 {
     //document.getElementById("game");
-    let winnerMessage=document.createElement("h2");
-    winnerMessage.setAttribute("id","winner-message");
-    
+    const messageList = document.querySelector("#game-message");
+    const winnerMessage = document.querySelector("#choose-option");
+     
     if(playerChoice===computerChoice)
     {
         winnerMessage.textContent = "TIE";
@@ -109,9 +109,9 @@ function determineWinner(playerChoice,computerChoice)
     {
         winnerMessage.textContent="Gun gets plugged by Carrot: YOU LOST:(";
     }
-    
-    console.log(winnerMessage);
-    winnerMessage.append();
+
+    messageList.appendChild(winnerMessage);
+
 }
 
 document.getElementById("bunny-choice").addEventListener("click", bunnyChoice);
