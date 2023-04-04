@@ -40,6 +40,7 @@
 #bunny-choice{
     width: 8vw;
     height: 8vw;
+    cursor: pointer;
     background-image:url("bunny-button.PNG");
     background-size: contain;
     background-repeat: no-repeat;
@@ -51,6 +52,7 @@
 #carrot-choice{
     width: 8vw;
     height: 8vw;
+    cursor: pointer;
     background-image:url("carrot-button.PNG");
     background-size: contain;
     background-repeat: no-repeat;
@@ -62,6 +64,7 @@
 #gun-choice{
     width: 8vw;
     height: 8vw;
+    cursor: pointer;
     background-image:url("gun-button.PNG");
     background-size: contain;
     background-repeat: no-repeat;
