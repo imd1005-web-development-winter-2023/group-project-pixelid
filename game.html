@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="en-ca">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Bunny Carrot Gun</title>
+        <link rel="stylesheet" href="test.css">
+    </head>
+
+    <body>
+        <h1>Bunny, carrot, gun</h1>
+
+        <div id="game">
+            <div id="your-choice"><img src="questionmark.gif" id="your-img"></div>
+            <div id="comp-choice"><img src="questionmark.gif" id="comp-img"></div>
+        </div>
+        <div id="game-message"><h2 id="choose-option">Choose option below:</h2></div>
+        <div id="choices">
+            <div id="bunny-choice" onclick="bunnyChoice()">bunny</div>
+            <div id="carrot-choice" onclick="carrotChoice()">carrot</div>
+            <div id="gun-choice" onclick="gunChoice()">gun</div>
+        </div>
+
+        <script src="code.js"></script>
+    </body>
+
+</html>
