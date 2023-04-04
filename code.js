@@ -1,3 +1,7 @@
+Math.random();
+
+const choicesList = ["Bunny", "Carrot", "Gun"];
+
 let playerChoice;
 let computerChoice;
 const playerImage=document.getElementById("your-img");
@@ -5,41 +9,45 @@ playerImage.setAttribute("class","img-left");
 const computerImage=document.getElementById("comp-img");
 computerImage.setAttribute("class","img-right");
 
+//Players Choice based on Selection
 function bunnyChoice()
 {
     playerImage.setAttribute("src","bunny.GIF");
+    playerChoice=0;
+
+    compChoice();
+    determineWinner(playerChoice,compChoice());
+}
+
+function carrotChoice()
+{
+    playerImage.setAttribute("src","carrot.GIF");
     playerChoice=1;
 
     compChoice();
     determineWinner(playerChoice,compChoice());
+
 }
-function carrotChoice()
+
+function gunChoice()
 {
-    playerImage.setAttribute("src","carrot.GIF");
+    playerImage.setAttribute("src","gun.GIF");
     playerChoice=2;
 
     compChoice();
     determineWinner(playerChoice,compChoice());
-
-}
-function gunChoice()
-{
-    playerImage.setAttribute("src","gun.GIF");
-    playerChoice=3;
-
-    compChoice();
-    determineWinner(playerChoice,compChoice());
 }
 
+//Computer Random Choice
 function compChoice()
 {
-    computerChoice=Math.floor( Math.random() * 4 );
+    computerChoice=Math.floor( Math.random() * 3 );
 
-    if(computerChoice===1)
+    if(computerChoice===0)
     {
         bunnyCompChoice();
     }
-    else if(computerChoice===2)
+    else if(computerChoice===1)
     {
         carrotCompChoice();
     }
@@ -55,15 +63,18 @@ function bunnyCompChoice()
 {
     computerImage.setAttribute("src","bunny.GIF");
 }
+
 function carrotCompChoice()
 {
     computerImage.setAttribute("src","carrot.GIF");
 }
+
 function gunCompChoice()
 {
     computerImage.setAttribute("src","gun.GIF");
 }
 
+//finds who the winner is
 function determineWinner(playerChoice,computerChoice)
 {
     //document.getElementById("game");
@@ -72,34 +83,35 @@ function determineWinner(playerChoice,computerChoice)
     
     if(playerChoice===computerChoice)
     {
-        document.getElementById("winner-message").innerHTML="TIE";
+        winnerMessage.textContent = "TIE";
+    }
+    else if(playerChoice===0&&computerChoice===1)
+    {
+        winnerMessage.textContent = "Bunny eats Carrot: YOU WON!";
     }
     else if(playerChoice===1&&computerChoice===2)
     {
-        document.getElementById("winner-message").innerHTML="Bunny eats Carrot: YOU WON!";
+        winnerMessage.textContent= "Carrot plugs Gun: YOU WON!";
     }
-    else if(playerChoice===2&&computerChoice===3)
+    else if(playerChoice===2&&computerChoice===0)
     {
-        document.getElementById("winner-message").innerHTML="Carrot plugs Gun: YOU WON!";
+        winnerMessage.textContent="Gun shoots Bunny: YOU WON!";
     }
-    else if(playerChoice===3&&computerChoice===1)
+    else if(playerChoice===0&&computerChoice===2)
     {
-        document.getElementById("winner-message").innerHTML="Gun shoots Bunny: YOU WON!";
+        winnerMessage.textContent="Bunny gets shot by Gun: YOU LOST:(";
     }
-    else if(playerChoice===1&&computerChoice===3)
+    else if(playerChoice===1&&computerChoice===0)
     {
-        document.getElementById("winner-message").innerHTML="Bunny gets shot by Gun: YOU LOST:(";
+        winnerMessage.textContent="Carrot gets eaten by Bunny: YOU LOST:(";
     }
     else if(playerChoice===2&&computerChoice===1)
     {
-        document.getElementById("winner-message").innerHTML="Carrot gets eaten by Bunny: YOU LOST:(";
-    }
-    else if(playerChoice===3&&computerChoice===2)
-    {
-        document.getElementById("winner-message").innerHTML="Gun gets plugged by Carrot: YOU LOST:(";
+        winnerMessage.textContent="Gun gets plugged by Carrot: YOU LOST:(";
     }
     
-    document.getElementById("choose-option").replaceChild(winnerMessage);
+    console.log(winnerMessage);
+    winnerMessage.append();
 }
 
 document.getElementById("bunny-choice").addEventListener("click", bunnyChoice);
