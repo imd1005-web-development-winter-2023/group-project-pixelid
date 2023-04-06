@@ -39,18 +39,39 @@
 }
 #bunny-choice{
     width: 8vw;
-    height: 4vw;
-    background-color: darkmagenta;
+    height: 8vw;
+    cursor: pointer;
+    background-image:url("bunny-button.PNG");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 1s ease;
+}
+#bunny-choice:hover{
+    transform: scale(1.1);
 }
 #carrot-choice{
     width: 8vw;
-    height: 4vw;
-    background-color: darkmagenta;
+    height: 8vw;
+    cursor: pointer;
+    background-image:url("carrot-button.PNG");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 1s ease;
+}
+#carrot-choice:hover{
+    transform: scale(1.1);
 }
 #gun-choice{
     width: 8vw;
-    height: 4vw;
-    background-color: darkmagenta;
+    height: 8vw;
+    cursor: pointer;
+    background-image:url("gun-button.PNG");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 1s ease;
+}
+#gun-choice:hover{
+    transform: scale(1.1);
 }
 .img-left{
     width: 8vw;
