@@ -1,19 +1,44 @@
-#game{
-    width: 30vw;
-    height: 15vw;
-    background-image: url("background.GIF");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+
+body {
+    background-color: rgb(245, 224, 255);
+    display: grid;
+    grid-template-rows: 80px 400px 80px 100px;
+    grid-template-areas:
+        "title"
+        "screen"
+        "message"
+        "choices";
+    padding: 20px;
+
+}
+
+h1{
+    grid-area: title;
+}
+
+#screen {
+    grid-area: screen;
+}
+
+#image-choices {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    margin-top: -280px;
+    padding-left: 250px;
+    padding-right: 250px;
 }
 
-#your-choice{
-    width: 10vw;
-    height: 10vw;
+#background-image {
+    display: flex;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#your-choice {
+    width: 150px;
+    padding: 20px;
     background-image: url("cloud.GIF");
     background-position: center;
     background-size: contain;
@@ -21,54 +46,44 @@
 }
 
 #comp-choice {
-    width: 10vw;
-    height: 10vw;
+    width: 150px;
+    padding: 20px;
     background-image: url("cloud.GIF");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-#choices{
-    width: 30vw;
-    height: 15vw;
+.choices {
+    grid-area: choices;
+}
+
+#choices {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
-#bunny-choice{
-    width: 8vw;
-    height: 4vw;
-    background-color: darkmagenta;
+
+#choices img {
+    width: 200px;
 }
-#carrot-choice{
-    width: 8vw;
-    height: 4vw;
-    background-color: darkmagenta;
+
+.img-left {
+    width: 150px;
 }
-#gun-choice{
-    width: 8vw;
-    height: 4vw;
-    background-color: darkmagenta;
-}
-.img-left{
-    width: 8vw;
-    height: 8vw;
-    margin: 3vh;
-}
-.img-right{
-    width: 8vw;
-    height: 8vw;
-    margin: 3vh;
+
+.img-right {
+    width: 150px;
     transform: scaleX(-1);
 }
-#game-message{
+
+.message {
+    grid-area: message;
     background-color: chartreuse;
-    width: 30vw;
-    height: 3vw;
 }
-#winner-message{
+
+#winner-message {
     color: blue;
-    font-size: 3vw;
+    font-size: 24px;
 }
