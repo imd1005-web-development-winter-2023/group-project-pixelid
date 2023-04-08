@@ -1,18 +1,22 @@
 body {
-    background-color: rgb(245, 224, 255);
+    background-color: rgb(240, 211, 253);
     display: grid;
-    grid-template-rows: 80px 400px 80px 100px;
+    grid-template-rows: 80px 400px 115px 100px;
     grid-template-areas:
         "title"
         "screen"
         "message"
         "choices";
-    padding: 20px;
+    /* padding: 20px; */
+    color: white;
 
 }
 
 h1 {
     grid-area: title;
+    font-size: 48px;
+    vertical-align: middle;
+    margin: auto;
 }
 
 #screen {
@@ -33,6 +37,8 @@ h1 {
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
+    border: solid rgb(224, 164, 252) 5px;
+    border-radius: 10px;
 }
 
 #your-choice {
@@ -57,6 +63,10 @@ h1 {
     grid-area: choices;
 }
 
+.choices img {
+    width: 100%;
+}
+
 #choices {
     display: flex;
     flex-direction: row;
@@ -65,24 +75,27 @@ h1 {
 }
 
 .img-left {
-    width: 8vw;
-    height: 8vw;
-    margin: 3vh;
+    width: 100%;
 }
 
 .img-right {
-    width: 8vw;
-    height: 8vw;
-    margin: 3vh;
+    width: 100%;
     transform: scaleX(-1);
 }
 
 .message {
     grid-area: message;
-    background-color: chartreuse;
+    color: white;
+    font-size: 26px;
+    margin: auto;
 }
 
 #winner-message {
-    color: blue;
     font-size: 24px;
+}
+
+@media only screen and (max-width: 950px) {
+    .choices img {
+        width: 80%;
+    }
 }
