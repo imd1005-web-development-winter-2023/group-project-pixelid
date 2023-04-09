@@ -7,7 +7,6 @@ body {
         "screen"
         "message"
         "choices";
-    /* padding: 20px; */
     color: white;
 
 }
@@ -23,15 +22,6 @@ body {
     grid-area: screen;
 }
 
-#image-choices {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: -280px;
-    padding-left: 250px;
-    padding-right: 250px;
-}
-
 #background-image {
     display: flex;
     max-width: 700px;
@@ -41,6 +31,15 @@ body {
     border-radius: 10px;
 }
 
+#image-choices {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -280px;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
 #your-choice {
     width: 150px;
     padding: 20px;
@@ -48,6 +47,7 @@ body {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    margin-right: 100px;
 }
 
 #comp-choice {
@@ -57,6 +57,7 @@ body {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    margin-left: 100px;
 }
 
 .choices {
@@ -99,8 +100,12 @@ body {
     font-size: 24px;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 905px) {
     #choices {
-            flex-direction: column;
+            justify-content: center;
     }
+
+    /* #background-image {
+        max-width: 60%;
+    } */
 }
