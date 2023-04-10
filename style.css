@@ -12,10 +12,7 @@ img{
   pointer-events: none;
   user-select: none;
 }
-a{
-  pointer-events: none;
-  user-select: none;
-}
+
 .titlepng
 {
   align-items: center;
@@ -24,6 +21,7 @@ a{
   background-color: transparent;
   margin: auto;
 }
+
 .container
 {
     display: flex;
@@ -47,6 +45,7 @@ a{
     text-decoration: none;
     color: #ed8092;
     background-color: transparent;
+    user-select: none;
   }
 
   .frontbuttons{
