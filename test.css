@@ -1,5 +1,9 @@
 body {
-    background-color: #1e9877;
+    /* background-color: #fad4da; */
+    /* background-color: #fffcef; */
+    /* background-color: #f1e3f3; */
+    /* background-color: #e7ffeb; */
+    background-color: #fff9ef;
     display: grid;
     grid-template-rows: 150px 400px 80px 80px;
     grid-template-areas:
@@ -27,7 +31,8 @@ body {
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
-    border: solid rgb(255, 255, 255) 5px;
+    /* border: solid rgb(255, 255, 255) 5px; */
+    border: solid #ffe7f3 5px;
     border-radius: 10px;
 }
 
@@ -91,7 +96,10 @@ body {
 
 .message {
     grid-area: message;
-    color: white;
+    color: #b4a5d5;
+    /* color: #03a88f; */
+    /* /* color: #95d385;
+    color: #5ac597; */
     font-size: 1.6rem;
     margin: auto;
     font-family: 'VT323', monospace;
