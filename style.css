@@ -13,8 +13,7 @@ body {
   display: flex;
   justify-content: center;
   background-color: transparent;
-  margin-top: 13vh;
-  margin-right: 5vw;
+  margin: auto;
 }
 .container
 {
@@ -67,7 +66,7 @@ body {
     transform: scale(1.1);
 
   }
-  footer{
+  .footer{
     font-family: 'VT323', monospace;
     color: #ceffab;
     font-size: 18px;
