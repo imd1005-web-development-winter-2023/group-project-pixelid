@@ -33,7 +33,7 @@ img{
 }
 
   .instructions{
-    position: fixed;
+    position: absolute;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -62,7 +62,7 @@ img{
     border: 4px;
     border-radius: 4px;
     border-style: solid;
-    width: 9vw;
+    width: 11vw;
     background-color: pink;
     transition: 0.5s;
   }
