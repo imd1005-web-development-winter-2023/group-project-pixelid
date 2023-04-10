@@ -1,0 +1,107 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url("background.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.titlepng
+{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  margin-top: -10%;
+}
+.container
+{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  margin:0 auto;
+  margin-top: -5%;
+
+}
+
+.startbutton {
+    position: absolute;
+    transition: 0.5s;
+    background-color: transparent;
+    border: none;
+    margin-top: -10%;
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+
+
+  }
+
+  .startbutton:hover{
+    transform: scale(1.1);
+  }
+
+  .btn-open {
+    position: absolute;
+    transition: 0.5s;
+    background-color: transparent;
+    border: none;
+    margin-bottom: -10%; 
+    padding: 10px;
+
+  }
+
+  .btn-open:hover{
+    transform: scale(1.1);
+  }
+
+  .modal{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    margin:0 auto;
+    z-index: 2;
+  }
+
+  .instcss{
+    position: absolute;
+    padding:10px;
+    margin-bottom: 15%;
+
+  }
+
+  /*
+  .icantdothisanymore{
+    opacity: 50%;
+    transition: 0.3s;
+    background-color: transparent;
+    border: none;
+
+  }
+
+  .icantdothisanymore:hover{
+    opacity: 100%;
+  }
+  */
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    z-index: 1;
+  }
+
+  .hidden
+  {
+    display: none;
+  }

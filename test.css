@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(57, 124, 88);
+    background-color: #1e9877;
     display: grid;
     grid-template-rows: 150px 400px 80px 80px;
     grid-template-areas:
@@ -94,6 +94,27 @@ body {
     color: white;
     font-size: 20px;
     margin: auto;
+}
+#bunny-choice{
+    cursor: pointer;
+    transition: 1s ease;
+}
+#bunny-choice:hover{
+    transform: scale(1.1);
+}
+#carrot-choice{
+    cursor: pointer;
+    transition: 1s ease;
+}
+#carrot-choice:hover{
+    transform: scale(1.1);
+}
+#gun-choice{
+    cursor: pointer;
+    transition: 1s ease;
+}
+#gun-choice:hover{
+    transform: scale(1.1);
 }
 
 #winner-message {
