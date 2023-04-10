@@ -7,20 +7,14 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
-
-footer{
-  font-family: 'VT323', monospace;
-  color: #ceffab;
-  text-align: center;
-  font-size: 18px;
-}
 .titlepng
 {
   align-items: center;
   display: flex;
   justify-content: center;
   background-color: transparent;
-  margin-top: -12%;
+  margin-top: 13vh;
+  margin-right: 5vw;
 }
 .container
 {
@@ -72,6 +66,15 @@ footer{
   .backbutton:hover{
     transform: scale(1.1);
 
+  }
+  footer{
+    font-family: 'VT323', monospace;
+    color: #ceffab;
+    font-size: 18px;
+    position: fixed;
+    bottom: 0;
+    display: inline-block;
+    text-align: center;
   }
 
   
