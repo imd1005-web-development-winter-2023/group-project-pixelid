@@ -36,8 +36,8 @@ body {
     flex-direction: row;
     justify-content: center;
     margin-top: -280px;
-    padding-left: 250px;
-    padding-right: 250px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 #your-choice {
@@ -100,12 +100,28 @@ body {
     font-size: 24px;
 }
 
-@media only screen and (max-width: 905px) {
+@media only screen and (max-width: 1064px) {
     #choices {
             justify-content: center;
     }
-
-    /* #background-image {
-        max-width: 60%;
-    } */
 }
+
+@media only screen and (max-width: 830px) {
+    .screen {
+        transform: scale(0.8);
+    }
+
+    body {
+        grid-template-rows: 100px 350px 80px 80px;
+    }
+
+    .choices img {
+        width: 70%;
+    }
+
+    .choices {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
