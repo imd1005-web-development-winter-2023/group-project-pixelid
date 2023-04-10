@@ -13,6 +13,7 @@ computerImage.setAttribute("class","img-right");
 function bunnyChoice()
 {
     playerImage.setAttribute("src","bunny.GIF");
+    playerImage.setAttribute("alt","You chose bunny!");
     playerChoice=0;
 
     compChoice();
@@ -22,6 +23,7 @@ function bunnyChoice()
 function carrotChoice()
 {
     playerImage.setAttribute("src","carrot.GIF");
+    playerImage.setAttribute("alt","You chose carrot!");
     playerChoice=1;
 
     compChoice();
@@ -32,6 +34,7 @@ function carrotChoice()
 function gunChoice()
 {
     playerImage.setAttribute("src","gun.GIF");
+    playerImage.setAttribute("alt","You chose gun!");
     playerChoice=2;
 
     compChoice();
@@ -62,16 +65,19 @@ function compChoice()
 function bunnyCompChoice()
 {
     computerImage.setAttribute("src","bunny.GIF");
+    computerImage.setAttribute("alt","Computer chose bunny!");
 }
 
 function carrotCompChoice()
 {
     computerImage.setAttribute("src","carrot.GIF");
+    computerImage.setAttribute("alt","Computer chose carrot!");
 }
 
 function gunCompChoice()
 {
     computerImage.setAttribute("src","gun.GIF");
+    computerImage.setAttribute("alt","Computer chose gun!");
 }
 
 //finds who the winner is
