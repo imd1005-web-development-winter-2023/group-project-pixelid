@@ -22,16 +22,19 @@ img{
   margin: auto;
 }
 
+.titlepng img {
+  width: 50%;
+  min-width: 400px;
+}
+
 .container
 {
     display: flex;
     flex-direction: row;
-    gap: 15vh;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -10%);
-
+    justify-content: space-around;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
   .instructions{
@@ -50,7 +53,16 @@ img{
 
   .frontbuttons{
     transition: 0.5s;
+    padding: 0.4rem;
+    display: flex;
+    justify-content: center;
   }
+
+  .frontbuttons img {
+      width: 120%;
+      min-width: 170px;
+  }
+
   .frontbuttons:hover{
     transform: scale(1.1);
   }
