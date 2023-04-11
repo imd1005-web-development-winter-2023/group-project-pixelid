@@ -1,0 +1,163 @@
+body {
+    /* background-color: #fad4da; */
+    /* background-color: #fffcef; */
+    /* background-color: #f1e3f3; */
+    /* background-color: #e7ffeb; */
+    background-color: #fff9ef;
+    display: grid;
+    grid-template-rows: 150px 400px 80px 80px;
+    grid-template-areas:
+        "title"
+        "screen"
+        "message"
+        "choices";
+    color: white;
+
+}
+
+.title {
+    grid-area: title;
+    margin: auto;
+    width: 400px;
+    margin-top: -1px;
+}
+
+#screen {
+    grid-area: screen;
+}
+
+#background-image {
+    display: flex;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: solid rgb(255, 255, 255) 5px; */
+    border: solid #ffe7f3 5px;
+    border-radius: 10px;
+}
+
+#image-choices {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -280px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#your-choice {
+    width: 150px;
+    padding: 20px;
+    background-image: url("cloud.GIF");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 100px;
+}
+
+#comp-choice {
+    width: 150px;
+    padding: 20px;
+    background-image: url("cloud.GIF");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 100px;
+}
+
+.choices {
+    grid-area: choices;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 10px;
+}
+
+.choices img {
+    width: 80%;
+    margin-top: 30px;
+}
+
+#choices {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.img-left {
+    width: 100%;
+}
+
+.img-right {
+    width: 100%;
+    transform: scaleX(-1);
+}
+
+.message {
+    grid-area: message;
+    color: #b4a5d5;
+    /* color: #03a88f; */
+    /* /* color: #95d385;
+    color: #5ac597; */
+    font-size: 1.6rem;
+    margin: auto;
+    font-family: 'VT323', monospace;
+    margin-block-start: -0.3em;
+    margin-block-end: -0.3em;
+}
+
+#bunny-choice{
+    cursor: pointer;
+    transition: 1s ease;
+}
+#bunny-choice:hover{
+    transform: scale(1.1);
+}
+#carrot-choice{
+    cursor: pointer;
+    transition: 1s ease;
+}
+#carrot-choice:hover{
+    transform: scale(1.1);
+}
+#gun-choice{
+    cursor: pointer;
+    transition: 1s ease;
+}
+#gun-choice:hover{
+    transform: scale(1.1);
+}
+
+#winner-message {
+    font-size: 24px;
+}
+img{
+    pointer-events: none;
+    user-select: none;
+  }
+@media only screen and (max-width: 1064px) {
+    #choices {
+            justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    .screen {
+        transform: scale(0.8);
+    }
+
+    body {
+        grid-template-rows: 100px 350px 80px 80px;
+    }
+
+    .choices img {
+        width: 70%;
+    }
+
+    .choices {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
