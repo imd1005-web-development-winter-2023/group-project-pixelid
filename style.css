@@ -20,10 +20,11 @@ img{
   justify-content: center;
   background-color: transparent;
   margin: auto;
+  margin-top: 60px;
 }
 
 .titlepng img {
-  width: 50%;
+  width: 60%;
   min-width: 400px;
 }
 
@@ -35,6 +36,7 @@ img{
     width: 60%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 100px;
 }
 
   .instructions{
